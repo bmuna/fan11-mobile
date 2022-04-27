@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Create by mohit.soni @ 21-10-219 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_odd"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_transfer_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_toolbar_dark"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/et_transfer_title_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text=""
+                android:layout_margin="4dp"
+                android:background="@drawable/reactangle_back_grey_search"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+            <ImageView
+                android:id="@+id/iv_transfer_title_search"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/ic_search_yellow"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight=".005"
+            android:background="@color/white" />
+        <TextView
+            android:id="@+id/tv_transfer_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/ic_down_yellow_24dp"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:text=""
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight=".005"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_transfer_point"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_down_yellow_24dp"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:text=""
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_transfer_2"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/ll_transfer_1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tv_transfer_base_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/app_light_yellow"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:text="@string/players"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_transfer_currency"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/app_light_yellow"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text="@string/team"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_transfer_ts"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/app_light_yellow"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text="@string/points"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_transfer_2"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:id="@+id/bt_transfer_play"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_weight=".3"
+        android:background="@color/app_light_yellow"
+        android:text="@string/play_ground" />
+
+</RelativeLayout>

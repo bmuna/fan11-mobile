@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Create by mohit.soni @ 18-Oct-19 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:scrollY="100dp"
+            android:src="@drawable/light_back" />
+
+        <RelativeLayout
+            android:id="@+id/rl_my_balance_1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:alpha=".7"
+                android:background="@drawable/circle_back_grey"
+                android:gravity="center" />
+
+            <com.fan.core.util.CircleImageView
+                android:id="@+id/iv_profile_person_default"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/wallet" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_add_balance_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:enabled="false"
+                android:fontFamily="@font/poppins_light"
+                android:text="@string/current_balance"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_add_balance_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:fontFamily="@font/poppins_light"
+                android:text=""
+                android:textColor="@color/app_light_yellow"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_add_balance_add_cash_text"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="20dp"
+        android:autoSizeMaxTextSize="15sp"
+        android:autoSizeMinTextSize="8sp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/light_grey"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:text="@string/add_cash_to_your_account"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeMaxTextSize="13sp"
+                android:autoSizeMinTextSize="8sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center_vertical"
+                android:text="@string/add_to_amount_in_brr"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_add_balance_amount_add"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:autoSizeMaxTextSize="12sp"
+                android:autoSizeMinTextSize="8sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/gold_out_border_grey_small"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="100"
+                android:textColor="@color/black" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tv_add_balance_amount_1"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeTextType="uniform"
+                    android:background="@drawable/gold_out_border_grey_small"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_add_balance_amount_2"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeTextType="uniform"
+                    android:background="@drawable/gold_out_border_grey_small"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_add_balance_amount_3"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeTextType="uniform"
+                    android:background="@drawable/gold_out_border_grey_small"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_amount_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:autoSizeMaxTextSize="12sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeTextType="uniform"
+                    android:background="#D4EDDA"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center_vertical"
+                    android:text="@string/enter_code_sent_by_text"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="13sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center_vertical"
+                    android:text="@string/enter_OTP_Code"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/et_add_balance_amount_add_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:autoSizeMaxTextSize="13sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeTextType="uniform"
+                    android:background="@drawable/gold_out_border_grey_small"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/bt_add_balance"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:autoSizeMaxTextSize="15sp"
+                android:autoSizeMinTextSize="8sp"
+                android:autoSizeTextType="uniform"
+                android:background="@color/app_light_yellow"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text="@string/add_balance"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

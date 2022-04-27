@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Create by mohit.soni @ 21-10-219 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/list_odd">
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:background="@color/list_odd"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="12">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_fixture_date_1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="2"-->
+                <!--android:gravity="center"-->
+                <!--android:text="5 Aug"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="14sp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_fixture_date_2"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="2"-->
+                <!--android:gravity="center"-->
+                <!--android:text="6 Aug"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="14sp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_fixture_date_3"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="2"-->
+                <!--android:gravity="center"-->
+                <!--android:text="7 Aug"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="14sp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_fixture_date_4"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="2"-->
+                <!--android:gravity="center"-->
+                <!--android:text="8 Aug"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="14sp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_fixture_date_5"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="2"-->
+                <!--android:gravity="center"-->
+                <!--android:text="9 Aug"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="14sp" />-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/rl_fixture_icon"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="2">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_weight=".15"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:src="@drawable/ic_yellow_calender"/>-->
+            <!--</RelativeLayout>-->
+
+        <!--</LinearLayout>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_fixtures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

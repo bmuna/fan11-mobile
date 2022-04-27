@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Create by mohit.soni @ 20-10-219 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="@color/list_odd">
+
+        <TextView
+            android:id="@+id/tv_table_hash"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="#"
+            android:layout_weight=".1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_table_team_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/team"
+            android:layout_weight=".4"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/tv_table_p"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/p"
+            android:layout_weight=".1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/tv_table_w_d_l"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/w_d_l"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/tv_table_g_d"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/gd"
+            android:layout_weight=".1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/tv_table_pts"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/pts"
+            android:layout_weight=".1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

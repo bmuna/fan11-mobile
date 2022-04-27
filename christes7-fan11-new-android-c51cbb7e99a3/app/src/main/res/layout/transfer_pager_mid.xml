@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Created by mohit.soni on .-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_transfer_pager_mid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_transfer_2" />
+</LinearLayout>

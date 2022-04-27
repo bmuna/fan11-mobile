@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?><!-- created by mohit.soni @ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#69696F"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_light"
+            android:padding="3dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:autoSizeMaxTextSize="12sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="#"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:autoSizeMaxTextSize="12sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="@string/user"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:autoSizeMaxTextSize="12sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="@string/pts"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:autoSizeMaxTextSize="15sp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:textColor="@color/app_dark_yellow" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingBottom="300dp"
+
+        android:id="@+id/rv_league_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:layout_below="@+id/rv_game_list_no_record"
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+<LinearLayout
+    android:layout_marginTop="-300dp"
+android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:id="@+id/tb_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        >
+
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Previous" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Next" />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

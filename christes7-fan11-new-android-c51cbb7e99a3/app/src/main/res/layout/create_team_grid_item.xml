@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Create by mohit.soni @ 18-10-2019 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/ll_create_team_grid"
+        android:layout_width="70dp"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_create_team_grid_item_icon"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".6"
+            android:scaleType="fitEnd"
+            android:layout_gravity="bottom"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".4"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_create_team_grid_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:background="@drawable/round_corner_back_green"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_create_team_grid_item_price"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:background="@drawable/rectangle_back_light_green"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

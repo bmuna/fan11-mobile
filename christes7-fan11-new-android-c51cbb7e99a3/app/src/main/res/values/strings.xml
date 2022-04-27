@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name">FAN11</string>
+
+    <string name="facebook_app_id" translatable="false">267489304160617</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb267489304160617</string>
+
+    <string name="there_is_some_technical_issue">There is some technical issue, please try after some time</string>
+    <string name="no_internet_connection">No internet connection, please check your connection</string>
+    <string name="create_tv_toolbar_head">Create Team</string>
+    <string name="full_address">Full Address</string>
+    <string name="profile">Profile</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="upload_id">UPLOAD ID</string>
+    <string name="upload_signature">UPLOAD SIGNATURE</string>
+    <string name="change">Change</string>
+    <string name="address">Address</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="pincode">Pincode</string>
+    <string name="skip">SKIP</string>
+    <string name="login">Login</string>
+    <string name="got_it">Got It</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password ? </string>
+    <string name="register">Register</string>
+    <string name="facebook">Facebook</string>
+    <string name="telegram">Telegram</string>
+    <string name="next">Next</string>
+    <string name="OTP_has_been_sent_to_your_mobile">OTP has been sent to your \n email / mobile number</string>
+    <string name="verify">Verify</string>
+    <string name="verify_mobile_no">Verify Mobile No</string>
+    <string name="first_name">First Name</string>
+    <string name="l_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="mobile_no_ext">Mobile No</string>
+    <string name="allow_sms_notifications">Allow SMS notifications</string>
+    <string name="notifications">Notification</string>
+    <string name="referral_codes">Referral codes</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="logout">Logout</string>
+    <string name="dd_mm_yyy">dd/mm/yyy</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_above_text">Enter above text</string>
+    <string name="new_password">New Password</string>
+    <string name="update">UPDATE</string>
+
+    <string name="team_name">Team name</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="reset">Reset</string>
+    <string name="confirm">Confirm</string>
+    <string name="add_balance">Add Balance</string>
+    <string name="request_OTP">Request OTP</string>
+    <string name="my_balance">My Balance</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="add_cash_to_your_account">Add cash to your account</string>
+    <string name="add_to_amount_in_brr">Add to amount(in Birr)</string>
+    <string name="enter_code_sent_by_text">Enter code sent by text</string>
+    <string name="enter_OTP_Code">Enter OTP Code</string>
+    <string name="withdraw_Birr">Withdraw (Birr )</string>
+    <string name="add_cash">Add cash</string>
+    <string name="withdraw_amount">Withdraw Amount</string>
+    <string name="add_money">Add money</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="deposited">Deposited</string>
+    <string name="deposit">Deposit</string>
+    <string name="coupon">Coupon</string>
+    <string name="coupon_id">Coupon ID</string>
+    <string name="add_coupon">Add Coupon</string>
+    <string name="winning">Winning</string>
+    <string name="bonus">Bonus</string>
+    <string name="my_recent_transaction">My Transactions</string>
+    <string name="withdrawal">Withdrawal</string>
+    <string name="add_remove_card">Add/Remove card, wallet, etc</string>
+
+    <string name="my_referrals">My Referrals</string>
+    <string name="kick_off_your_friend">Kick off your friend’s \n FAN11 journey!</string>
+    <string name="for_every_friend_that_plays">For every friend that plays, you both get</string>
+    <string name="share_your_referral_code">Share your referral code</string>
+    <string name="share_to">Share to</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="gmail">Gmail</string>
+    <string name="more">More</string>
+
+    <string name="team">Team</string>
+    <string name="points_league">Points / Leagues</string>
+    <string name="my_team">MY TEAM</string>
+    <string name="games">Games</string>
+    <string name="transfer">Transfer</string>
+    <string name="pl">PL</string>
+    <string name="tables">TABLES</string>
+    <string name="points">Points</string>
+    <string name="leagues">Leagues</string>
+
+    <string name="blog">Blog</string>
+    <string name="fixtures">Fixtures</string>
+    <string name="table">Table</string>
+
+    <string name="p">P</string>
+    <string name="w_d_l">W-D-L</string>
+    <string name="gd">GD</string>
+    <string name="pts">Pts</string>
+
+    <string name="goalKeepers">GoalKeepers</string>
+    <string name="total_points">Total Points</string>
+
+    <string name="summary">Summary</string>
+    <string name="history">History</string>
+
+    <string name="position">Position</string>
+    <string name="form">Form</string>
+    <string name="gameweek_1">Gameweek - 1</string>
+    <string name="value">Value</string>
+    <string name="total_score">Total Score</string>
+    <string name="selected_by">Selected By</string>
+
+    <string name="previous_seasons">Previous Seasons</string>
+    <string name="seasons">Seasons</string>
+    <string name="player_info">Player Info</string>
+    <string name="sending_verification_code_to_email">Sending verification code to  mobile no.</string>
+    <string name="exit">Exit</string>
+    <string name="you_want_to_exit_app">You want to exit app</string>
+    <string name="collecting_detail">Collecting detail...</string>
+    <string name="current">Current</string>
+    <string name="completed">Completed</string>
+    <string name="join">Join</string>
+    <string name="full">Full</string>
+    <string name="joined">Joined</string>
+    <string name="join_again">Join Again</string>
+
+    <string name="in_progress">In Progress</string>
+
+    <string name="birr">BIRR</string>
+
+    <string name="players">Players</string>
+    <string name="prize">Prize</string>
+    <string name="price">Price</string>
+
+    <string name="view_user">View User</string>
+    <string name="user">Users</string>
+    <string name="ranking">Ranking</string>
+    <string name="recent_transaction">Recent Transaction</string>
+    <string name="transaction_date">Transaction Date</string>
+    <string name="old_balance">Old Balance</string>
+    <string name="new_balance">New Balance</string>
+    <string name="transaction_method">Transaction Method</string>
+    <string name="transaction_type">Transaction Type</string>
+    <string name="amount">Amount</string>
+    <string name="status">Status</string>
+    <string name="gender">Gender</string>
+
+    <string name="play_ground">Play Ground</string>
+    <string name="no_leagues_available">No leagues available </string>
+
+    <string name="send_text">Send Text</string>
+
+
+    <string name="english">English</string>
+    <string name="amharic">አማርኛ</string>
+    <string name="manage_payments">Mange Payments</string>
+
+    <string name="view_team">View Team</string>
+
+    <string name="search">Search</string>
+
+    <string name="gkp">GKP</string>
+    <string name="def">DEF</string>
+    <string name="mid">MID</string>
+    <string name="fwd">FWD</string>
+
+    <string name="name">Name</string>
+    <string name="start_date">Start Date</string>
+    <string name="start_time">Start Time</string>
+    <string name="entry_fee">Entry Fee</string>
+    <string name="players_allowed">Players Allowed</string>
+    <string name="users_allowed">Users Allowed</string>
+
+    <string name="view_points">View Points</string>
+</resources>

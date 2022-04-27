@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="semi_black">#141414</color>
+    <color name="back">#303c6c</color>
+
+    <color name="app_light_yellow">#F7E419</color>
+    <color name="app_blue">#0d0f28</color>
+    <color name="app_background">#eeeeee</color>
+
+    <color name="app_dark_yellow">#696E4A</color>
+    <color name="app_toolbar">#0D0E28</color>
+    <color name="app_toolbar_dark">#070716</color>
+
+
+<!--    <color name="up_toolbar">#57A773</color>-->
+    <color name="down_toolbar">#056839</color>
+
+
+
+
+
+
+
+    <color name="get">#E91E63</color>
+    <color name="red">#FF0000</color>
+    <color name="dark_pink">#662A4C</color>
+    <color name="grey">#858083</color>
+    <color name="dark_grey">#252525</color>
+    <color name="darker_blue">#2C2A42</color>
+    <color name="light_grey">#DAD7D7</color>
+
+    <color name="facebook">#FF3A579C</color>
+    <color name="telegram">#32A9DE</color>
+
+    <color name="list_odd">#ffffff</color>
+    <color name="list_even">#eeeeee</color>
+</resources>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Create by mohit.soni @ 22-10-2019 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:rotation="90"
+        android:src="@drawable/ic_left_arrow_yellow"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"/>
+    <LinearLayout
+        android:id="@+id/ll_popup_info_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_popup_yellow"
+        android:orientation="vertical"
+        android:layout_marginTop="-23dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="7dp">
+
+            <TextView
+                android:id="@+id/tv_popup_info_item_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="12sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=""
+                android:textColor="@color/black"/>
+
+<!--            <TextView
+                android:id="@+id/tv_popup_info_item_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:autoSizeMaxTextSize="8sp"
+                android:autoSizeMinTextSize="6sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="Value"
+                android:textColor="@color/black"/>-->
+        </LinearLayout>
+ <!--       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_popup_info_item_1_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:autoSizeMaxTextSize="8sp"
+                android:autoSizeMinTextSize="6sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="@string/start_date"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_popup_info_item_1_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:autoSizeMaxTextSize="8sp"
+                android:autoSizeMinTextSize="6sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="May 23, 2020"
+                android:maxLines="2"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_popup_info_item_2_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:autoSizeMaxTextSize="8sp"
+                android:autoSizeMinTextSize="6sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="@string/start_time"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_popup_info_item_2_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:autoSizeMaxTextSize="8sp"
+                android:autoSizeMinTextSize="6sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="06:14 AM"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_popup_info_item_3_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:autoSizeMaxTextSize="8sp"
+                android:autoSizeMinTextSize="6sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="@string/entry_fee"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_popup_info_item_3_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:autoSizeMaxTextSize="8sp"
+                android:autoSizeMinTextSize="6sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="5 Birr"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_popup_info_item_4_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:autoSizeMaxTextSize="8sp"
+                android:autoSizeMinTextSize="6sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="@string/players_allowed"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_popup_info_item_4_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:autoSizeMaxTextSize="8sp"
+                android:autoSizeMinTextSize="6sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="11"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_popup_info_item_5_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:autoSizeMaxTextSize="8sp"
+                android:autoSizeMinTextSize="6sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="@string/users_allowed"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_popup_info_item_5_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:autoSizeMaxTextSize="8sp"
+                android:autoSizeMinTextSize="6sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="500"
+                android:textColor="@color/black"/>
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

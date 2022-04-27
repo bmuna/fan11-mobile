@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?><!-- created by mohit.soni @ 11/9/2019 _ 5:06 PM-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="20dp">
+
+
+    <com.vipulasri.ticketview.TicketView
+
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:ticketOrientation="vertical"
+        app:ticketScallopRadius="10dp"
+        app:ticketShowDivider="true"
+        app:ticketDividerType="dash"
+        app:ticketDividerPadding="0dp"
+        app:ticketDividerColor="@color/app_background"
+        app:ticketElevation="14dp"
+        app:ticketShowBorder="false"
+        app:ticketScallopPositionPercent="30"
+        app:ticketCornerType="scallop"
+        app:ticketCornerRadius="10dp"
+        app:ticketBackgroundBeforeDivider="@color/app_light_yellow"
+        app:ticketShadowColor="@color/grey"
+        >
+
+
+
+
+
+    </com.vipulasri.ticketview.TicketView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".50">
+
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/price"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_centerInParent="true"
+                                android:layout_weight=".5"
+                                android:fontFamily="@font/poppins_light"
+                                android:gravity="center_horizontal|top"
+                                android:paddingTop="6dp"
+                                android:text="@string/price"
+                                android:textColor="@color/app_toolbar"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/tv_game_list_amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_centerInParent="true"
+                                android:layout_weight=".4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_horizontal|top"
+                                android:text=""
+                                android:textColor="@color/app_toolbar"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+
+                                />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".50">
+
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/prize"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_centerInParent="true"
+                                android:layout_weight=".5"
+                                android:fontFamily="@font/poppins_light"
+                                android:gravity="center_horizontal"
+                                android:paddingTop="4dp"
+                                android:text="@string/prize"
+                                android:textColor="@color/app_toolbar"
+                                android:textSize="13sp" />
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/tv_game_list_count"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="0dp"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:layout_weight=".4"-->
+<!--                                android:fontFamily="@font/poppins_bold"-->
+<!--                                android:gravity="center_horizontal|top"-->
+<!--                                android:text=""-->
+<!--                                android:textColor="@color/app_toolbar"-->
+<!--                                android:textSize="15sp"-->
+<!--                                android:textStyle="bold"-->
+<!--                                />-->
+                            <TextView
+                                android:id="@+id/tv_game_list_prize"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_centerInParent="true"
+                                android:layout_weight=".4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_horizontal|top"
+                                android:text=""
+                                android:textColor="@color/app_toolbar"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".7">
+
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/joined_sign"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_centerInParent="true"
+                                android:layout_weight=".8"
+                                android:fontFamily="@font/poppins_light"
+                                android:gravity="center_horizontal|bottom"
+                                android:paddingTop="4dp"
+                                android:text=""
+                                android:textColor="@color/app_toolbar"
+                                android:textSize="13sp" />
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3">
+
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/tv_game_list_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_centerInParent="true"
+                                android:layout_weight=".9"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:paddingTop="4dp"
+                                android:text=""
+                                android:textColor="@color/app_toolbar"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+
+                                />
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_weight=".5"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tv_game_list_sub_text_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".5"
+                        android:autoSizeMaxTextSize="10sp"
+                        android:autoSizeMinTextSize="8sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center_horizontal|bottom"
+                        android:text=""
+                        android:textColor="@color/app_toolbar" />
+
+                    <TextView
+                        android:id="@+id/tv_game_list_text_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".5"
+                        android:gravity="center_horizontal|center"
+                        android:text=""
+                        android:fontFamily="@font/poppins_bold"
+                        android:textStyle="bold"
+
+                        android:textColor="@color/app_toolbar"
+                        android:autoSizeMaxTextSize="10sp"
+                        android:autoSizeMinTextSize="8sp"
+                        android:autoSizeTextType="uniform" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tv_game_list_sub_text_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".5"
+                        android:fontFamily="@font/poppins_light"
+                        android:text=""
+                        android:gravity="center_horizontal|bottom"
+
+                        android:textColor="@color/app_toolbar"
+                        android:autoSizeMaxTextSize="10sp"
+                        android:autoSizeMinTextSize="8sp"
+                        android:autoSizeTextType="uniform" />
+
+                    <TextView
+                        android:id="@+id/tv_game_list_text_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".5"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/app_toolbar"
+                        android:textStyle="bold"
+
+                        android:autoSizeMaxTextSize="10sp"
+                        android:autoSizeMinTextSize="8sp"
+                        android:autoSizeTextType="uniform" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/button_holder"
+
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="30dp"
+
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight=".1"
+                android:background="@drawable/yellow">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/button_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:id="@+id/join"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="false"
+                        android:clickable="false"
+                        android:scaleType="fitCenter"
+
+
+                        android:src="@drawable/ic_baseline_arrow_forward_24" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

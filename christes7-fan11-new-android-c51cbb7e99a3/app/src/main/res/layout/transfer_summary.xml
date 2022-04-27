@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Create by mohit.soni @ 21-10-2019 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_even"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/list_odd"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tv_transfer_summary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:text="@string/summary"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".002"
+            android:background="@color/white"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_transfer_history"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:text="@string/history"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_transfer_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/list_even"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_transfer_summary_team"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="70dp"
+                    android:text="@string/team"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".002"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_transfer_summary_team_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="70dp"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/list_odd"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_transfer_summary_position"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="70dp"
+                    android:text="@string/points"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".002"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_transfer_summary_position_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="70dp"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/app_light_yellow"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/list_even"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_transfer_summary_form"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="70dp"
+                    android:text="@string/form"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".002"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_transfer_summary_form_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="70dp"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/list_odd"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_transfer_summary_gameweek_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="70dp"
+                    android:text="@string/gameweek_1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".002"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_transfer_summary_gameweek_1_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="70dp"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/list_even"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_transfer_summary_total_score"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="70dp"
+                    android:text="@string/total_score"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".002"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_transfer_summary_total_score_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="70dp"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/list_odd"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_transfer_summary_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="70dp"
+                    android:text="@string/value"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".002"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_transfer_summary_value_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="70dp"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/list_even"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_transfer_summary_selected_by"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="70dp"
+                    android:text="@string/selected_by"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".002"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_transfer_summary_selected_by_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="70dp"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:alpha=".3"
+            android:background="@drawable/round_back_grey"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_transfer_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:alpha=".7"
+        android:background="@color/dark_grey"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#28272D"
+            android:fontFamily="@font/poppins_light"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"
+            android:text="@string/previous_seasons"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight=".3"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:background="#3F3E40"
+                    android:fontFamily="@font/poppins_light"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="@string/seasons"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:background="#38373D"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins_light"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="2018/19"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight=".7"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_transfer_history_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scrollbarThumbHorizontal="@drawable/yellow_bottom_scroll"
+                    android:scrollbars="horizontal"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

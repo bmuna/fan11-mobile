@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fan.core">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera2.full"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera2.autofocus" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/app_icon_new"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".module.Ranking"/>
+        <activity android:name=".tutorial.Main" />
+        <activity android:name=".module.AddCouponNew" />
+        <activity android:name=".module.AddCouponActivity" />
+        <activity
+            android:name=".module.Splash"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".module.LandingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.TutorialPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.LanguagePage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.Register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.MobileNumber"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.OTP_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.Update"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.Personal_Information"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.Full_Address"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.WebHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.Dummy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module_fragment.MainFragmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.Terms"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.AddBalanceActivity"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name=".module.AddBalanceCoupon" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".module.WithDrawBalanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.MyBalanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.RecentTransactionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.PrivacyPolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.JoinGame"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.ReferralActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/app_icon_new" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/app_light_yellow" />
+
+        <service
+            android:name=".service.FirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?><!-- created by mohit.soni @ 11/9/2019 _ 5:06 PM-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <com.github.florent37.shapeofview.shapes.CutCornerView
+            android:id="@+id/clipCorner"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:elevation="20dp"
+            app:shape_cutCorner_bottomRightSize="10dp"
+            app:shape_cutCorner_topRightSize="10dp"
+            app:shape_cutCorner_topLeftSize="10dp"
+            app:shape_cutCorner_bottomLeftSize="10dp">
+            <FrameLayout
+                android:id="@+id/edge_color"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:background="@color/app_light_yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_centerInParent="true"
+                            android:layout_weight=".6"
+                            android:fontFamily="@font/poppins_light"
+                            android:gravity="center_horizontal|bottom"
+                            android:paddingTop="4dp"
+
+                            android:text="PRICE"
+                            android:textColor="@color/app_toolbar"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:id="@+id/tv_gam_ist_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal"
+
+                            android:layout_weight=".4">
+
+                            <TextView
+                                android:id="@+id/tv_game_list_amount"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_horizontal|right"
+                                android:textStyle="bold"
+                                android:layout_marginRight="1dp"
+
+                                android:text=""
+
+                                android:textColor="@color/app_toolbar"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_game_list_currency"
+                                android:layout_width="46dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textStyle="bold"
+                                android:gravity="center_horizontal|left"
+                                android:layout_marginLeft="1dp"
+
+                                android:text=""
+
+                                android:textColor="@color/app_toolbar"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/prize"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_centerInParent="true"
+                            android:layout_weight=".4"
+                            android:fontFamily="@font/poppins_light"
+                            android:gravity="center_horizontal|bottom"
+                            android:paddingTop="4dp"
+                            android:text="PRIZE"
+                            android:textColor="@color/app_toolbar"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:id="@+id/tvgam_ist_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal"
+
+                            android:layout_weight=".4">
+                            <TextView
+                                android:id="@+id/tv_game_list_count"
+                                android:layout_width="49dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_horizontal|right"
+                                android:text=""
+                                android:textStyle="bold"
+
+                                android:layout_marginRight="1dp"
+                                android:textColor="@color/app_toolbar"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_game_list_currency2"
+                                android:layout_width="46dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_horizontal|left"
+                                android:text=""
+                                android:layout_marginLeft="1dp"
+                                android:textStyle="bold"
+
+
+                                android:textColor="@color/app_toolbar"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </com.github.florent37.shapeofview.shapes.CutCornerView>
+
+
+
+        <com.github.florent37.shapeofview.shapes.CutCornerView
+            android:id="@+id/clipCorne"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:elevation="20dp"
+            app:shape_cutCorner_bottomLeftSize="10dp"
+            app:shape_cutCorner_bottomRightSize="10dp"
+            app:shape_cutCorner_topLeftSize="10dp"
+            app:shape_cutCorner_topRightSize="10dp">
+
+
+            <FrameLayout
+                android:id="@+id/cover"
+
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="145dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="2dp"
+
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/dotted_line" />
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/joined_sign"
+                            android:layout_width="match_parent"
+                            android:layout_height="7dp"
+                            android:layout_centerInParent="true"
+                            android:layout_weight=".1"
+                            android:fontFamily="@font/poppins_light"
+                            android:gravity="center_horizontal|center"
+                            android:lines="2"
+                            android:paddingTop="4dp"
+                            android:text=""
+                            android:textStyle="normal"
+
+                            android:textColor="@color/app_toolbar"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_game_list_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_centerInParent="true"
+                            android:layout_weight=".9"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_horizontal|center"
+                            android:text="Test"
+                            android:textStyle="bold"
+
+                            android:lines="2"
+
+                            android:textColor="@color/app_toolbar"
+                            android:textSize="20sp" />
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_game_list_sub_text_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_centerInParent="true"
+                            android:layout_weight=".3"
+                            android:fontFamily="@font/poppins_light"
+                            android:gravity="center_horizontal|left"
+                            android:paddingTop="4dp"
+                            android:text=""
+                            android:textColor="@color/app_toolbar"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_game_list_text_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_centerInParent="true"
+                            android:layout_weight=".7"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_horizontal|left"
+                            android:text=""
+                            android:textStyle="bold"
+
+                            android:textColor="@color/app_toolbar"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginRight="50dp"
+
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_game_list_sub_text_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_centerInParent="true"
+                            android:layout_weight=".3"
+                            android:fontFamily="@font/poppins_light"
+                            android:gravity="center_horizontal|left"
+                            android:paddingTop="4dp"
+                            android:text=""
+                            android:textColor="@color/app_toolbar"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_game_list_text_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_centerInParent="true"
+                            android:layout_weight=".7"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_horizontal|left"
+                            android:text=""
+                            android:textStyle="bold"
+
+                            android:textColor="@color/app_toolbar"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.github.florent37.shapeofview.shapes.CutCornerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="100dp"
+
+                    app:shape_cutCorner_bottomRightSize="10dp"
+                    >
+
+                    <FrameLayout
+                        android:id="@+id/button_cover"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_light_yellow">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/bt_game_list_join"
+                                android:layout_width="57dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center_vertical|right"
+                                android:text="Join"
+                                android:textColor="@color/app_toolbar"
+                                android:textSize="15sp" />
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:clickable="false"
+
+
+                                android:src="@drawable/ic_baseline_arrow_forward_24"/>
+
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </com.github.florent37.shapeofview.shapes.CutCornerView>
+            </FrameLayout>
+        </com.github.florent37.shapeofview.shapes.CutCornerView>
+        <!-- YOUR CONTENT -->
+
+
+    </LinearLayout>
+
+</RelativeLayout>

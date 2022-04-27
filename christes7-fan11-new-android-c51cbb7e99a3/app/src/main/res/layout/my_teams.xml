@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Create by mohit.soni @ 20-01-2020 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eeeeee">
+
+    <RelativeLayout
+        android:id="@+id/rl_transfer_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+
+        <TextView
+            android:id="@+id/tv_my_team_list_no_leagues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_leagues_available"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/grey"
+            android:visibility="gone"/>
+        <ExpandableListView
+            android:id="@+id/elv_my_team_list"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:fadeScrollbars="true"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true" />
+    </RelativeLayout>
+
+</LinearLayout>

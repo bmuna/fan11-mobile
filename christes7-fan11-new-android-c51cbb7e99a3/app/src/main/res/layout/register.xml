@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Create by mohit.soni @ 02-Oct-19 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/register_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30sp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/ll_mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:alpha=".5"
+                            android:background="@drawable/round_rectangle_transparent_grey_alpha"
+                            android:gravity="center" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/person_yellow" />
+
+                        <EditText
+                            android:id="@+id/et_register_first_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:autoSizeMaxTextSize="12sp"
+                            android:autoSizeMinTextSize="8sp"
+                            android:autoSizeTextType="uniform"
+                            android:textSize="12sp"
+                            android:background="@drawable/round_rectangle_transparent"
+                            android:fontFamily="@font/poppins_light"
+                            android:gravity="center"
+                            android:hint="@string/first_name"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:paddingLeft="7dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:alpha=".5"
+                            android:background="@drawable/round_rectangle_transparent_grey_alpha"
+                            android:gravity="center" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/person_yellow" />
+
+                        <EditText
+                            android:id="@+id/et_register_last_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:autoSizeMaxTextSize="12sp"
+                            android:autoSizeMinTextSize="8sp"
+                            android:autoSizeTextType="uniform"
+                            android:textSize="12sp"
+                            android:background="@drawable/round_rectangle_transparent"
+                            android:fontFamily="@font/poppins_light"
+                            android:gravity="center"
+                            android:hint="@string/l_name"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:paddingLeft="7dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:alpha=".5"
+                                android:background="@drawable/round_rectangle_transparent_grey_alpha"
+                                android:gravity="center" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:src="@mipmap/cake" />
+
+                            <TextView
+                                android:id="@+id/tv_register_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/round_rectangle_transparent"
+                                android:fontFamily="@font/poppins_light"
+                                android:gravity="center"
+                                android:hint="@string/dd_mm_yyy"
+                                android:maxLines="1"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="7dp"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                        <!-- <RelativeLayout
+                             android:layout_width="0dp"
+                             android:layout_height="45dp"
+                             android:layout_marginLeft="6dp"
+                             android:layout_weight=".5">
+
+                             <TextView
+                                 android:id="@+id/tv_register_country"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent"
+                                 android:background="@drawable/round_rectangle_transparent"
+                                 android:fontFamily="@font/poppins_light"
+                                 android:gravity="center"
+                                 android:hint="@string/country"
+                                 android:text=""
+                                 android:textColor="@color/white"
+                                 android:textColorHint="@color/white"
+                                 android:textSize="15sp"
+                                 android:tooltipText="sdd" />
+
+                             <LinearLayout
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent"
+                                 android:layout_centerInParent="true"
+                                 android:alpha=".3"
+                                 android:background="@color/grey"
+                                 android:gravity="center" />
+                         </RelativeLayout>-->
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:alpha=".5"
+                            android:background="@drawable/round_rectangle_transparent_grey_alpha"
+                            android:gravity="center" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:background="@mipmap/key_yellow" />
+
+                        <EditText
+                            android:id="@+id/et_register_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:autoSizeMaxTextSize="12sp"
+                            android:autoSizeMinTextSize="8sp"
+                            android:autoSizeTextType="uniform"
+                            android:textSize="12sp"
+                            android:background="@drawable/round_rectangle_transparent"
+                            android:fontFamily="@font/poppins_light"
+                            android:gravity="center"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:lines="1"
+                            android:paddingLeft="7dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:alpha=".5"
+                            android:background="@drawable/round_rectangle_transparent_grey_alpha"
+                            android:gravity="center" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:background="@mipmap/key_yellow" />
+
+                        <EditText
+                            android:id="@+id/et_register_password_confirm"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:autoSizeMaxTextSize="12sp"
+                            android:autoSizeMinTextSize="8sp"
+                            android:autoSizeTextType="uniform"
+                            android:textSize="12sp"
+                            android:background="@drawable/round_rectangle_transparent"
+                            android:fontFamily="@font/poppins_light"
+                            android:gravity="center"
+                            android:hint="@string/confirm_password"
+                            android:inputType="textPassword"
+                            android:lines="1"
+                            android:paddingLeft="7dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:alpha=".5"
+                                android:background="@drawable/round_rectangle_transparent_grey_alpha"
+                                android:gravity="center" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:src="@mipmap/discount_yellow" />
+
+                            <EditText
+                                android:id="@+id/et_register_referral"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:autoSizeMaxTextSize="12sp"
+                                android:autoSizeMinTextSize="8sp"
+                                android:autoSizeTextType="uniform"
+                                android:textSize="12sp"
+                                android:background="@drawable/round_rectangle_transparent"
+                                android:fontFamily="@font/poppins_light"
+                                android:gravity="center"
+                                android:hint="@string/referral_codes"
+                                android:maxLines="1"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="10dp"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white" />
+
+                        </RelativeLayout>
+
+                        <!--
+                                        <RelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="45dp"
+                                            android:layout_marginLeft="6dp"
+                                            android:layout_weight=".5">
+
+                                            <TextView
+                                                android:id="@+id/tv_register_gender"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@drawable/round_rectangle_transparent"
+                                                android:fontFamily="@font/poppins_light"
+                                                android:gravity="center"
+                                                android:hint="@string/gender"
+                                                android:text=""
+                                                android:textColor="@color/white"
+                                                android:textColorHint="@color/white"
+                                                android:textSize="15sp"
+                                                android:tooltipText="sdd" />
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_centerInParent="true"
+                                                android:alpha=".3"
+                                                android:background="@color/grey"
+                                                android:gravity="center" />
+                                        </RelativeLayout>
+                        -->
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:alpha=".5"
+                            android:background="@drawable/round_rectangle_transparent_grey_alpha"
+                            android:gravity="center" />
+
+                        <EditText
+                            android:id="@+id/et_register_mobile_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:autoSizeMaxTextSize="12sp"
+                            android:autoSizeMinTextSize="8sp"
+                            android:autoSizeTextType="uniform"
+                            android:textSize="12sp"
+                            android:background="@drawable/round_rectangle_transparent"
+                            android:fontFamily="@font/poppins_light"
+                            android:gravity="center"
+                            android:hint="@string/mobile_no_ext"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:paddingLeft="7dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:text="+251"
+                            android:gravity="center"
+                            android:autoSizeMaxTextSize="12sp"
+                            android:autoSizeMinTextSize="8sp"
+                            android:autoSizeTextType="uniform"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/half_round_button_yellow" />
+
+                        <!--<TextView
+                            android:id="@+id/tv_register_mobile_number_verify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:autoSizeMaxTextSize="12sp"
+                            android:autoSizeMinTextSize="8sp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/poppins_light"
+                            android:gravity="center_vertical"
+                            android:text="@string/verify"
+                            android:textColor="@color/app_light_yellow" />
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/ic_info_yellow_24dp" />-->
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_register_mobile_number_verify_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:alpha=".5"
+                            android:background="@drawable/round_rectangle_transparent_grey_alpha"
+                            android:gravity="center" />
+
+                        <EditText
+                            android:id="@+id/et_register_mobile_number_verify_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:autoSizeMaxTextSize="12sp"
+                            android:autoSizeMinTextSize="8sp"
+                            android:autoSizeTextType="uniform"
+                            android:textSize="12sp"
+                            android:background="@drawable/round_rectangle_transparent"
+                            android:fontFamily="@font/poppins_light"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:paddingLeft="7dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/bt_register_mobile_number_verify"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="20dp"
+                        android:autoSizeMaxTextSize="12sp"
+                        android:autoSizeMinTextSize="8sp"
+                        android:autoSizeTextType="uniform"
+                        android:textSize="12sp"
+                        android:background="@drawable/round_button_yellow"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="@string/verify_mobile_no"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black" />
+                    <!--
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="65dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="20dp"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:id="@+id/tv_register_captcha"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="5dp"
+                                        android:fontFamily="@font/poppins_light"
+                                        android:gravity="center"
+                                        android:text=""
+                                        android:textColor="@color/white"
+                                        android:textSize="40sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+                                        android:alpha=".3"
+                                        android:background="@color/grey"
+                                        android:gravity="center" />
+                                </RelativeLayout>
+                    -->
+
+                    <!--
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="20dp"
+                                    android:gravity="center">
+
+                                    <EditText
+                                        android:id="@+id/et_register_captcha_confirm"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+                                        android:autoSizeMaxTextSize="15sp"
+                                        android:autoSizeMinTextSize="8sp"
+                                        android:autoSizeTextType="uniform"
+                                        android:background="@drawable/round_rectangle_transparent"
+                                        android:fontFamily="@font/poppins_light"
+                                        android:gravity="center"
+                                        android:hint="@string/enter_above_text"
+                                        android:inputType="text"
+                                        android:lines="1"
+                                        android:paddingLeft="7dp"
+                                        android:text=""
+                                        android:textColor="@color/white"
+                                        android:textColorHint="@color/white" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+                                        android:alpha=".3"
+                                        android:background="@color/grey"
+                                        android:gravity="center" />
+                                </RelativeLayout>
+                    -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <Button
+                            android:id="@+id/bt_register_login"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight=".5"
+                            android:autoSizeMaxTextSize="12sp"
+                            android:autoSizeMinTextSize="8sp"
+                            android:autoSizeTextType="uniform"
+                            android:textSize="12sp"
+                            android:background="@drawable/round_button_dark_blue"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="@string/login"
+                            android:textAllCaps="false"
+                            android:textColor="@color/grey" />
+
+                        <Button
+                            android:id="@+id/bt_register"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight=".5"
+                            android:autoSizeMaxTextSize="12sp"
+                            android:autoSizeMinTextSize="8sp"
+                            android:autoSizeTextType="uniform"
+                            android:textSize="12sp"
+                            android:background="@drawable/round_button_yellow"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="@string/register"
+                            android:textAllCaps="false" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!-- created by mohit.soni @ 21-01-2020-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_elv_my_team_list_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tv_elv_my_team_list_child_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight=".6"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="as"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textColor="@color/white"
+            android:autoSizeMaxTextSize="12sp"
+            android:autoSizeMinTextSize="8sp"
+            android:autoSizeTextType="uniform"/>
+
+        <TextView
+            android:id="@+id/tv_elv_my_team_list_child_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight=".4"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="@string/view_user"
+            android:textColor="@color/app_light_yellow"
+            android:autoSizeMaxTextSize="12sp"
+            android:autoSizeMinTextSize="8sp"
+            android:autoSizeTextType="uniform"/>
+    </LinearLayout>
+
+
+</LinearLayout>

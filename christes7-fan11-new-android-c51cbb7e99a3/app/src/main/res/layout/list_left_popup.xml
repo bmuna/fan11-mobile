@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Create by mohit.soni @ 22-10-2019 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_popup_1"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_popup_white"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_height="match_parent"
+                android:autoSizeMaxTextSize="8sp"
+                android:autoSizeMinTextSize="6sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="Stats"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_height="match_parent"
+                android:autoSizeMaxTextSize="8sp"
+                android:autoSizeMinTextSize="6sp"
+                android:autoSizeTextType="uniform"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="Values"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_height="match_parent"
+                android:autoSizeMaxTextSize="8sp"
+                android:autoSizeMinTextSize="6sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="Point"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/ll_popup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_popup_right"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_left_arrow_white"
+        android:visibility="gone"/>
+
+
+    <ImageView
+        android:id="@+id/iv_popup_left"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_right_arrow"
+        android:layout_marginLeft="-9dp"
+        android:layout_toRightOf="@+id/ll_popup_1"
+        android:visibility="gone"/>
+</RelativeLayout>

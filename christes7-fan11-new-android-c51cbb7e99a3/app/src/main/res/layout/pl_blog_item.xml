@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Create by mohit.soni @ 20-10-2019 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_pl_blog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/iv_category_icon"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="189dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/white_outline_corner_curved"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_pl_blog_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginBottom="10sp"/>
+</LinearLayout>

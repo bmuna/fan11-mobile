@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Create by mohit.soni @ 22-10-2019 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/list_odd"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_transfer_history_item_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#37363C"
+            android:gravity="center"
+            android:text="P"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_transfer_history_item_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#28272D"
+            android:gravity="center"
+            android:text="142"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+</LinearLayout>

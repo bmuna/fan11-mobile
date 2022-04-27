@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Created by mohit.soni @ 01-Oct-19 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="rectangle"
+            android:useLevel="false">
+            <solid android:color="@color/app_toolbar" />
+
+            <corners
+                android:topLeftRadius="100dp"
+                android:bottomLeftRadius="100dp"
+                android:topRightRadius="100dp"
+                android:bottomRightRadius="100dp"/>
+            <size
+                android:width="200dp"
+                android:height="100dp" />
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:shape="rectangle"
+            android:useLevel="false">
+            <solid android:color="@android:color/transparent" />
+
+            <corners
+                android:topLeftRadius="100dp"
+                android:bottomLeftRadius="100dp"
+                android:topRightRadius="100dp"
+                android:bottomRightRadius="100dp"/>
+            <size
+                android:width="200dp"
+                android:height="100dp" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/app_light_yellow"/>
+        </shape>
+    </item>
+    <item
+        android:width="100dp"
+        android:gravity="right">
+        <shape
+            android:shape="rectangle"
+            android:useLevel="false">
+            <solid android:color="@color/app_light_yellow" />
+
+            <corners
+                android:topRightRadius="100dp"
+                android:bottomRightRadius="100dp"/>
+        </shape>
+    </item>
+</layer-list>

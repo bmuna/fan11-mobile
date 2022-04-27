@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!-- created by mohit.soni @ 21-01-2020-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_elv_my_team_list_group"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/round_rectangle_head_yellow"
+        android:textColor="@color/black"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:autoSizeMaxTextSize="14sp"
+        android:autoSizeMinTextSize="8sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/poppins_medium"/>
+
+</LinearLayout>

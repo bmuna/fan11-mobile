@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Created by mohit.soni @ 01-Oct-19 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_back">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/green_blur_back" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_above="@+id/ll_mobile_number"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/register_logo" />
+
+    <LinearLayout
+        android:id="@+id/ll_mobile_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30sp"
+                android:layout_weight=".8"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:alpha=".5"
+                            android:background="@drawable/round_rectangle_transparent_grey_alpha"
+                            android:gravity="center" />
+
+                        <EditText
+                            android:id="@+id/et_mobile_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:autoSizeMaxTextSize="12sp"
+                            android:autoSizeMinTextSize="8sp"
+                            android:autoSizeTextType="uniform"
+                            android:background="@drawable/round_rectangle_transparent"
+                            android:fontFamily="@font/poppins_light"
+                            android:gravity="center"
+                            android:hint="@string/mobile_no_ext"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:paddingLeft="7dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:autoSizeMaxTextSize="12sp"
+                            android:autoSizeMinTextSize="8sp"
+                            android:autoSizeTextType="uniform"
+                            android:background="@drawable/half_round_button_yellow"
+                            android:gravity="center"
+                            android:text="+251"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/bt_mobile_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight=".5"
+                        android:autoSizeMaxTextSize="12sp"
+                        android:autoSizeMinTextSize="8sp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@drawable/round_button_yellow"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="@string/send_text"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

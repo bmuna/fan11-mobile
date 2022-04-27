@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Created by mohit.soni on .-->
+<resources>
+
+
+    <string name="app_name">FAN11</string>
+
+    <string name="there_is_some_technical_issue">አንዳንድ ቴክኒካዊ ጉዳይ አለ ፣ እባክዎን ከተወሰነ ጊዜ በኋላ ይሞክሩ ፡፡</string>
+    <string name="no_internet_connection">ምንም የበይነመረብ ግንኙነት የለም ፣ እባክዎ ግንኙነትዎን ያረጋግጡ</string>
+    <string name="create_tv_toolbar_head">ቡድን ፍጠር</string>
+    <string name="full_address">ሙሉ አድራሻ</string>
+    <string name="profile">መገለጫ</string>
+    <string name="personal_information">የግል መረጃ</string>
+    <string name="upload_id">መታወቂያ ይስቀሉ</string>
+    <string name="upload_signature">ፊርማ ይስቀሉ</string>
+    <string name="change">ለውጥ</string>
+    <string name="address">አድራሻ</string>
+    <string name="country">ሀገር</string>
+    <string name="state">ግዛት</string>
+    <string name="city">ከተማ</string>
+    <string name="pincode">ፒንኮድ</string>
+    <string name="skip">መዝለል</string>
+    <string name="login">ግባ</string>
+    <string name="got_it">ገባኝ</string>
+    <string name="password">ፕስወርድ</string>
+    <string name="forget_password">የይለፍ ቃል ረሳ ? </string>
+    <string name="register">ይመዝገቡ</string>
+    <string name="facebook">FaceBook</string>
+    <string name="telegram">ቴሌግራም</string>
+    <string name="next">ቀጣይ</string>
+    <string name="OTP_has_been_sent_to_your_mobile">ኦቲፒ ወደ የእርስዎ \ n ኢሜይል / ሞባይል ቁጥር ተልኳል</string>
+    <string name="verify">ያረጋግጡ</string>
+    <string name="first_name">የመጀመሪያ ስም</string>
+    <string name="l_name">የአያት ሥም</string>
+    <string name="email">ኢሜይል</string>
+    <string name="date_of_birth">የትውልድ ቀን</string>
+    <string name="mobile_no">ሞባይል ቁጥር</string>
+    <string name="mobile_no_ext">ሞባይል ቁጥር</string>
+    <string name="allow_sms_notifications">የኤስኤምኤስ ማስታወቂያዎችን ፍቀድ</string>
+    <string name="notifications">ማስታወቂያ</string>
+    <string name="referral_codes">የማጣቀሻ ኮዶች</string>
+    <string name="privacy_policy">የ ግል የሆነ</string>
+    <string name="terms_and_conditions">አተገባበሩና ​​መመሪያው</string>
+    <string name="logout">ውጣ</string>
+    <string name="dd_mm_yyy">dd/mm/yyy</string>
+    <string name="confirm_password">የይለፍ ቃል አረጋግጥ</string>
+    <string name="enter_above_text">ከዚህ በላይ ጽሑፍ ያስገቡ</string>
+    <string name="new_password">አዲስ የይለፍ ቃል</string>
+    <string name="update">አዘምን</string>
+
+
+    <string name="team_name">የቡድን ስም</string>
+    <string name="terms_of_use">የአጠቃቀም መመሪያ</string>
+    <string name="reset">ዳግም አስጀምር</string>
+    <string name="confirm">ያረጋግጡ</string>
+    <string name="add_balance">ቀሪ ሂሳብ ይጨምሩ</string>
+    <string name="my_balance">የእኔ ቀሪ ሂሳብ</string>
+    <string name="current_balance">የአሁኑ ሒሳብ</string>
+    <string name="add_cash_to_your_account">ወደ ሂሳብዎ ገንዘብ ያክሉ</string>
+    <string name="add_to_amount_in_brr">ወደ መጠን ያክሉ(ብር ውስጥ)</string>
+    <string name="add_cash">ገንዘብ ያክሉ</string>
+    <string name="add_money">ገንዘብ ያክሉ</string>
+    <string name="total_balance">ጠቅላላ ሂሳብ</string>
+    <string name="deposited">ተቀማጭ ተደርጓል</string>
+    <string name="winning">ማሸነፍ</string>
+    <string name="bonus">ጉርሻ</string>
+    <string name="my_recent_transaction">የእኔ ጊዜ ግብይቶች</string>
+    <string name="manage_payments">ክፍያዎችን ያቀናብሩ</string>
+    <string name="add_remove_card">ካርድ ፣ የኪስ ቦርሳ ፣ ወዘተ ያክሉ / ያስወግዱ</string>
+
+    <string name="my_referrals">የእኔ ማጣቀሻዎች</string>
+    <string name="kick_off_your_friend">ጓደኞችዎን ይርickቸው \n የ FAN11 ጉዞ !</string>
+    <string name="for_every_friend_that_plays">ለሚጫወተው ሁሉ ጓደኛ, ሁለታችሁም ታገኛላችሁ</string>
+    <string name="share_your_referral_code">የማጣቀሻ ኮድዎን ያጋሩ</string>
+    <string name="share_to">ያጋሩ ለ</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="gmail">ጂሜይል</string>
+    <string name="more">ተጨማሪ</string>
+
+    <string name="team">ቡድን</string>
+    <string name="points_league">ነጥቦች / ሊግ</string>
+    <string name="transfer">ማስተላለፍ</string>
+    <string name="pl">ፕ</string>
+    <string name="points">ነጥቦች</string>
+    <string name="leagues">ሊግ</string>
+
+    <string name="blog">ብሎግ</string>
+    <string name="fixtures">ማስተካከያዎች</string>
+    <string name="table">ሠንጠረዥ</string>
+
+    <string name="p">ገጽ</string>
+    <string name="w_d_l">ወ-መ-L</string>
+    <string name="gd">GD</string>
+    <string name="pts">ነጥብ</string>
+
+    <string name="goalKeepers">ግብ ጠባቂዎች</string>
+    <string name="total_points">ጠቅላላ ነጥቦች</string>
+
+    <string name="summary">ማጠቃለያ</string>
+    <string name="history">ታሪክ</string>
+
+    <string name="position">አቀማመጥ</string>
+    <string name="form">ቅጽ</string>
+    <string name="gameweek_1">የጨዋታ ሳምንት - 1</string>
+    <string name="value">እሴት</string>
+    <string name="total_score">አጠቃላይ ውጤት</string>
+    <string name="selected_by">የተመረጠው በ</string>
+    <string name="price">ዋጋ</string>
+
+
+    <string name="previous_seasons">ቀዳሚ ምዕራፎች</string>
+    <string name="seasons">ወቅቶች</string>
+    <string name="player_info">የተጫዋች መረጃ</string>
+    <string name="sending_verification_code_to_email">የማረጋገጫ ኮድ ወደ  ሞባይል ቁጥር በመላክ ላይ.</string>
+    <string name="exit">ውጣ</string>
+    <string name="you_want_to_exit_app">መተግበሪያን ለቀው መውጣት ይፈልጋሉ</string>
+    <string name="collecting_detail">ዝርዝሮችን መሰብሰብ...</string>
+    <string name="current">የአሁኑ</string>
+    <string name="completed">ተጠናቋል</string>
+    <string name="join">ይቀላቀሉ</string>
+    <string name="birr">BIRR</string>
+    <string name="amount">መጠን</string>
+    <string name="verify_mobile_no">የሞባይል ቁጥር ያረጋግጡ</string>
+    <string name="coupon">ኩፖን</string>
+    <string name="coupon_id">ኩፖን መታወቂያ</string>
+    <string name="add_coupon">ኩፖን ይጨምሩ</string>
+    <string name="deposit">ተቀማጭ ገንዘብ</string>
+    <string name="english">English</string>
+    <string name="enter_code_sent_by_text">በጽሑፍ የተላከ ኮድን ያስገቡ</string>
+    <string name="enter_OTP_Code">የኦቲፒ ኮድ ያስገቡ</string>
+    <string name="full">ሙሉ</string>
+    <string name="games">ጨዋታዎች</string>
+    <string name="gender">.ታ</string>
+    <string name="joined">ተቀላቅሏል</string>
+    <string name="my_team">የኔ ቡድን</string>
+    <string name="new_balance">አዲስ ሂሳብ</string>
+    <string name="no_leagues_available">ምንም ሊግ የለም</string>
+    <string name="old_balance">የድሮ ሚዛን</string>
+    <string name="play_ground">መሬት አጫውት</string>
+    <string name="players">ተጫዋቾች</string>
+    <string name="prize">ሽልማት</string>
+    <string name="ranking">ደረጃ</string>
+    <string name="recent_transaction">የቅርብ ጊዜ ግብይት</string>
+    <string name="request_OTP">OTP ጠይቅ</string>
+    <string name="send_text">ጽሑፎችን ይላኩ</string>
+    <string name="status">ሁኔታ</string>
+    <string name="tables">ጠረጴዛዎች</string>
+    <string name="transaction_date">የግብይት ቀን</string>
+    <string name="transaction_method">የግብይት ዘዴ</string>
+    <string name="transaction_type">የግብይት አይነት</string>
+    <string name="user">ተጠቃሚዎች</string>
+    <string name="view_user">ተጠቃሚዎችን ይመልከቱ</string>
+    <string name="withdraw_amount">መጠንን ተወው</string>
+    <string name="withdraw_Birr">ሰረቀ (ብር)</string>
+    <string name="withdrawal">ማስወጣት</string>
+    <string name="amharic">አማርኛ</string>
+    <string name="view_team">ቡድንን ይመልከቱ</string>
+    <string name="search">ይፈልጉ</string>
+    <string name="def">ተከላካይ</string>
+    <string name="fwd">አትቂ</string>
+    <string name="gkp">በረኛ</string>
+    <string name="mid">መሀል</string>
+    <string name="in_progress">በሂደት ላይ</string>
+    <string name="entry_fee">የመግቢያ ክፍያ</string>
+    <string name="name">ስም</string>
+    <string name="players_allowed">ተጫዋቾች ተፈቅ .ል</string>
+    <string name="start_date">የመጀመሪያ ቀን</string>
+    <string name="start_time">የመጀመሪያ ሰዓት</string>
+    <string name="users_allowed">ተጠቃሚዎች ተፈቅ .ል</string>
+    <string name="view_points">ነጥቦችን ይመልከቱ</string>
+    <string name="join_again">እንደገና ይግቡ</string>
+
+
+
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by mohit.soni @ 25-may-20-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvIndicator1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/landing_indicator_off" />
+
+        <TextView
+            android:id="@+id/tvIndicator2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/landing_indicator_off" />
+
+        <TextView
+            android:id="@+id/tvIndicator3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/landing_indicator_off" />
+
+        <TextView
+            android:id="@+id/tvIndicator4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/landing_indicator_off" />
+
+        <TextView
+            android:id="@+id/tvIndicator5"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/landing_indicator_off" />
+
+        <TextView
+            android:id="@+id/tvIndicator6"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/landing_indicator_off" />
+        <TextView
+            android:id="@+id/tvIndicator7"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/landing_indicator_off" />
+
+        <TextView
+            android:id="@+id/tvIndicator8"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/landing_indicator_off" />
+
+        <TextView
+            android:id="@+id/tvIndicator9"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/landing_indicator_off" />
+        <TextView
+            android:id="@+id/tvIndicator10"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/landing_indicator_off" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:text="@string/skip"
+        android:textAllCaps="true"
+        android:background="@drawable/round_button_yellow"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/bt_tutorial_got_it"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:background="@color/app_light_yellow"
+        android:text="@string/got_it"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="true"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>

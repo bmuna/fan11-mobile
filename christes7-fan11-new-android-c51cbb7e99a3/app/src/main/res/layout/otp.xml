@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Create by mohit.soni @ 04-10-2019 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_back"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_above="@+id/ll_login"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/icon_512" />
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Enter OTP Code"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/OTP_has_been_sent_to_your_mobile"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/et_otp_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="1"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:alpha=".4"
+                    android:background="@color/grey"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/et_otp_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="1"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:alpha=".4"
+                    android:background="@color/grey"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/et_otp_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="1"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:alpha=".4"
+                    android:background="@color/grey"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/et_otp_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="1"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:alpha=".4"
+                    android:background="@color/grey"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/et_otp_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="1"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:alpha=".4"
+                    android:background="@color/grey"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/et_otp_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="1"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:alpha=".4"
+                    android:background="@color/grey"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/bt_otp_verify"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight=".5"
+                android:autoSizeMaxTextSize="12sp"
+                android:autoSizeMinTextSize="8sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/round_button_yellow"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="@string/verify"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

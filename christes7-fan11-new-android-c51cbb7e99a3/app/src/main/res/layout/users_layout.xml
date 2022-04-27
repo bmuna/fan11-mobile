@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/users_table"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="@color/app_toolbar_dark">
+        <ImageView
+            android:id="@+id/users_trophy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_light"
+            android:padding="3dp"
+            />
+
+        <TextView
+            android:id="@+id/user_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_light"
+            android:autoSizeMaxTextSize="15sp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeTextType="uniform"/>
+
+        <TextView
+            android:id="@+id/users_username"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:gravity="center"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_light"
+            android:autoSizeMaxTextSize="15sp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/users_point"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text=""
+            android:fontFamily="@font/poppins_light"
+            android:autoSizeMaxTextSize="15sp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeTextType="uniform"/>
+
+        <TextView
+            android:id="@+id/users_view_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:text="@string/view_team"
+            android:textColor="@color/app_dark_yellow"
+            android:fontFamily="@font/poppins_light"
+            android:autoSizeMaxTextSize="15sp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeTextType="uniform"/>
+    </LinearLayout>
+</LinearLayout>

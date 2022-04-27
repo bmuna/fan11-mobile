@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Create by mohit.soni @ 05-Oct-19 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:id="@+id/tb_header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/black"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_light_yellow"
+                    android:textSize="20sp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_toolbar_language_change"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:background="@drawable/round_button_toolbar_language_english"
+                        android:orientation="horizontal"
+                        android:layout_margin="1dp">
+
+                        <TextView
+                            android:id="@+id/tv_toolbar_language_amheric"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:autoSizeMaxTextSize="10sp"
+                            android:autoSizeMinTextSize="8sp"
+                            android:autoSizeTextType="uniform"
+                            android:gravity="center"
+                            android:text="@string/amharic"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_toolbar_language_english"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:text="@string/english"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:autoSizeMaxTextSize="10sp"
+                            android:autoSizeMinTextSize="8sp"
+                            android:autoSizeTextType="uniform"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_toolbar_language"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey"
+                        android:drawableRight="@drawable/ic_down_yellow_24dp"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:text="English Script"
+                        android:textColor="@color/white"
+                        android:autoSizeMaxTextSize="12sp"
+                        android:autoSizeMinTextSize="8sp"
+                        android:autoSizeTextType="uniform"
+                        android:textSize="12sp"
+                        android:visibility="invisible"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_toolbar_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:autoSizeMaxTextSize="18sp"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_light_yellow"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_toolbar_back"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:scaleY="1.3"
+                    android:src="@drawable/ic_chevron_left_yellow" />
+
+
+                <com.fan.core.util.CircleImageView
+                    android:id="@+id/iv_toolbar_profile_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@+id/iv_toolbar_back"
+                    android:layout_marginBottom="6dp"
+                    android:layout_weight=".15"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:id="@+id/iv_toolbar_icon_tutorial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="6dp"
+                        android:layout_toLeftOf="@+id/iv_toolbar_wallet_icon"
+                        android:src="@mipmap/question"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/iv_toolbar_wallet_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="6dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="6dp"
+                        android:src="@mipmap/wallet"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </Toolbar>
+
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tb_main_frame_2"
+        android:layout_below="@+id/tb_header"
+       />
+
+    <Toolbar
+        android:id="@+id/tb_main_frame_2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_main_frame_create_team"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight=".2">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_main_frame_create_team"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="5dp" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="10sp"-->
+            <!--android:text="@string/team" />-->
+            <!--</RelativeLayout>-->
+            <RelativeLayout
+                android:id="@+id/rl_main_frame_my_team"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".33">
+
+                <ImageView
+                    android:id="@+id/iv_main_frame_my_team"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:autoSizeMaxTextSize="10sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center"
+                    android:text="@string/my_team"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".33">
+
+                <RelativeLayout
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+>
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/iv_power"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/logo" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_main_frame_transfer"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight=".2">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_main_frame_transfer"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="5dp" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="10sp"-->
+            <!--android:text="@string/transfer" />-->
+            <!--</RelativeLayout>-->
+            <RelativeLayout
+                android:id="@+id/rl_main_frame_pl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".33">
+
+                <ImageView
+                    android:id="@+id/iv_main_frame_pl"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:autoSizeMaxTextSize="10sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center"
+                    android:text="@string/fixtures"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </Toolbar>
+
+
+</RelativeLayout>

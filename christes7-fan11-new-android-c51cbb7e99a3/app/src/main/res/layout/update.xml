@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Create by mohit.soni @ 02-Oct-19 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_back">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/ll_update"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/icon_512" />
+
+    <LinearLayout
+        android:id="@+id/ll_update"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:alpha=".5"
+                android:background="@drawable/round_rectangle_transparent_grey_alpha"
+                android:gravity="center" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_lock" />
+
+            <EditText
+                android:id="@+id/et_update_new"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:autoSizeMaxTextSize="12sp"
+                android:autoSizeMinTextSize="8sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/round_rectangle_transparent"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:hint="@string/new_password"
+                android:inputType="text"
+                android:lines="1"
+                android:paddingLeft="7dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:alpha=".5"
+                android:background="@drawable/round_rectangle_transparent_grey_alpha"
+                android:gravity="center" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_lock" />
+
+            <EditText
+                android:id="@+id/et_update_new_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:autoSizeMaxTextSize="12sp"
+                android:autoSizeMinTextSize="8sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/round_rectangle_transparent"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:hint="@string/confirm_password"
+                android:inputType="text"
+                android:lines="1"
+                android:paddingLeft="7dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/bt_update"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight=".5"
+                android:autoSizeMaxTextSize="12sp"
+                android:autoSizeMinTextSize="8sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/round_button_yellow"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="@string/update"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Created by mohit.soni on 17-02-2020.-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ground_back">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_tranfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_transfer_4"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/ll_join_game_bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+            <LinearLayout
+                android:id="@+id/ll_join_game_position"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                android:weightSum="4">
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_join_game_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/bt_join_game_reset"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight=".3"
+            android:autoSizeMaxTextSize="12sp"
+            android:autoSizeMinTextSize="8sp"
+            android:autoSizeTextType="uniform"
+            android:background="@color/red"
+            android:text="@string/reset" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:background="@drawable/round_back_grey"
+            android:orientation="vertical"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:src="@mipmap/wallet_yellow" />
+
+            <TextView
+                android:id="@+id/tv_join_game_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:autoSizeMaxTextSize="12sp"
+                android:autoSizeMinTextSize="8sp"
+                android:autoSizeTextType="uniform"
+
+                android:text="1 Birr"
+                android:textColor="@color/app_light_yellow"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_join_game_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:autoSizeMaxTextSize="12sp"
+            android:autoSizeMinTextSize="8sp"
+            android:autoSizeTextType="uniform"
+            android:layout_marginBottom="10dp"
+            android:layout_weight=".3"
+            android:background="@color/app_light_yellow"
+            android:text="@string/confirm" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Create by mohit.soni @ 18-Oct-19 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ground_back"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/sw_create_team"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textOff=""
+                android:textOn=""
+                app:switchMinWidth="70dp"
+                app:thumbTint="@color/app_light_yellow"
+                app:track="@drawable/round_switch_yellow_off" />
+
+            <TextView
+                android:id="@+id/tv_create_team_switch_text"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical|right"
+                android:text="Auto Pick"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/ll_create_team_1"
+                android:layout_centerInParent="true">
+                <LinearLayout
+                    android:id="@+id/ll_team_position_create"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ground_back"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_create_team_1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/bt_create_team_reset"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight=".3"
+                    android:background="@color/app_light_yellow"
+                    android:text="@string/reset" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:background="@drawable/round_back_grey"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@mipmap/wallet_yellow" />
+
+                    <TextView
+                        android:id="@+id/tv_create_team_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/app_light_yellow"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_create_team_confirm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight=".3"
+                    android:background="@color/app_light_yellow"
+                    android:text="@string/confirm" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

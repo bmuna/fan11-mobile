@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Create by mohit.soni @ 21-10-2019 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_fixture_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2">
+                    <ImageView
+                        android:id="@+id/iv_fixture_icon_1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_weight=".15"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_fixture_name_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".5"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="7dp"
+                    android:text=""
+                    android:paddingTop="10dp"
+                    android:lines="2"
+                    android:paddingBottom="10dp"
+                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_fixture_score_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text=""
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2">
+                    <ImageView
+                        android:id="@+id/iv_fixture_icon_2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_weight=".15"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_fixture_name_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".5"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="7dp"
+                    android:text=""
+                    android:lines="2"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_fixture_score_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text=""
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_fixture_time_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:text=""
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:autoSizeMaxTextSize="15sp"
+                android:autoSizeMinTextSize="8sp"
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/tv_fixture_time_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:text=""
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:autoSizeMaxTextSize="15sp"
+                android:autoSizeMinTextSize="8sp"
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight=".2"-->
+<!--            android:orientation="vertical"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_fixture_date"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:text=""-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="18sp" />-->
+
+<!--        </LinearLayout>-->
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+</LinearLayout>
